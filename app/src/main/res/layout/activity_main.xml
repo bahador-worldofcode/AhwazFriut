@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white"
+    android:id="@+id/container"
+    >
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ahwaz_friut_logo"
+        android:scaleType="centerCrop"
+
+        />
+
+
+    <TextView
+        android:id="@+id/ahwaz_friut_wellcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/get_info_text_main"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/ahwaz_friut_txt"
+        android:textSize="35sp"
+        android:textColor="@color/red_a_400"
+        android:fontFamily="@font/titrbold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/get_info_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/get_info_text_main"
+        android:textSize="18sp"
+        android:textColor="@color/grey700"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_info_text_main"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:indeterminateDrawable="@drawable/progress_bar_features"
+        />
+
+
+
+
+        <Button
+            android:id="@+id/btn_go_to_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to sign_up_page"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/btn_home_activity"
+
+
+            />
+
+
+    <Button
+        android:id="@+id/btn_home_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go home activity"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

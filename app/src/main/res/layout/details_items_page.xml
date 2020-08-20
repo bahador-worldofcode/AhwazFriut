@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+
+
+
+
+    <ImageView
+        android:id="@+id/image_items_detail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        tools:background="@tools:sample/avatars"
+        />
+
+
+    <TextView
+        android:id="@+id/title_details_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_item_detail"
+        android:layout_below="@+id/image_items_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_details_item">
+
+
+        <TextView
+            android:id="@+id/price_item_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_item_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/plus_icon_item_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_exposure_plus_item"
+            android:layout_toRightOf="@+id/price_item_details"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/minus_icon_item_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_exposure_neg_item"
+            android:layout_toLeftOf="@+id/price_item_details"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

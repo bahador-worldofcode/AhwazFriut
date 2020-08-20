@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo700"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:fontFamily="@font/royab"
+        android:background="@color/grey200"
+        />
+
+
+    <EditText
+        android:id="@+id/number_user_edtx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="شماره همراه خود را وارد کنید "
+        android:textColorHint="@color/grey200"
+        android:layout_marginTop="200dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/titrbold"
+        android:layout_centerHorizontal="true"
+        android:background="#1DFFFFFF"
+        android:padding="16dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_code_mobile"
+        android:layout_below="@+id/number_user_edtx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:background="@color/bluegrey700"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/zarbold" />
+
+
+
+
+
+
+</RelativeLayout>

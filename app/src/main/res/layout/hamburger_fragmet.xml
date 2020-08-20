@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:id="@+id/hambuerger_container"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+    <Button
+
+        android:id="@+id/last_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/titrbold"
+        android:text="@string/last_orderes"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+
+
+         />
+
+
+    <View
+
+        android:id="@+id/sapce1"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/indigo700" />
+
+    <TextView
+
+        android:id="@+id/choose_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/titrbold"
+        android:text="@string/choose_address"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+
+
+        />
+
+    <View
+        android:id="@+id/sapce2"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/indigo700"
+        />
+
+    <TextView
+        android:id="@+id/increase_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/titrbold"
+        android:text="@string/increase_remaining"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        />
+
+    <View
+        android:id="@+id/sapce3"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/indigo700"
+
+        />
+
+    <TextView
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/titrbold"
+        android:text="@string/support"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        />
+
+
+    <View
+        android:id="@+id/sapce4"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/indigo700" />
+
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/titrbold"
+        android:text="@string/exit"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        />
+
+
+    <View
+        android:id="@+id/sapce5"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/indigo700" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

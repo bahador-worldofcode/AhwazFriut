@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        >
+
+
+    <ImageView
+        android:id="@+id/image_items_cart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        tools:background="@tools:sample/avatars"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/items_cart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_name_cart"
+        android:layout_toStartOf="@+id/image_items_cart"
+        android:layout_marginTop="4dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/trash_icon_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:srcCompat="@drawable/ic_delete_trash_cart_items"
+        android:layout_below="@+id/items_cart_title"
+        android:layout_toStartOf="@+id/image_items_cart"
+        android:layout_marginRight="8dp"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp"
+        android:background="@color/grey50"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_cart_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+        <TextView
+            android:id="@+id/amount_items_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amount_items_Cart"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            />
+
+            <TextView
+                android:id="@+id/amount_choose_by_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_user_choose_cart"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+            <TextView
+                android:id="@+id/price_items_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_items_cart"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_below="@id/amount_items_cart"
+                />
+
+            <TextView
+                android:id="@+id/price_items_choose_by_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_items_choose_by_user"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/amount_choose_by_user"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_cart_items"
+            >
+
+            <ImageButton
+                android:id="@+id/one_plus_items_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_minus_and_plus_items_cart"
+                tool:srcCompat="@drawable/ic_plus_items_cart"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/one_minus_item_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tool:srcCompat="@drawable/ic_minus_items_cart"
+                android:layout_toRightOf="@+id/one_plus_items_cart"
+                android:background="@drawable/shape_minus_and_plus_items_cart"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

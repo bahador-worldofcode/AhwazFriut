@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green400"
+    android:elevation="12dp"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_well_come"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        >
+
+    <TextView
+        android:id="@+id/well_come_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/well_come"
+        android:textSize="30sp"
+        android:padding="8dp"
+       android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/titrbold"
+        android:background="@android:color/white"
+        android:textColor="@color/deeporange500"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/rl_well_come"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red_a_400"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_txt"
+        android:elevation="8dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/royab"
+        android:padding="8dp"
+
+        />
+
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_sing_up"
+            android:elevation="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_txt"
+            android:fontFamily="@font/titrbold"
+            android:textSize="25sp"
+            android:background="@drawable/shape_inter1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rl_txt_user"
+            android:layout_marginTop="25dp"
+            android:padding="8dp"
+
+
+            />
+
+            <Button
+                android:id="@+id/btn_sing_in"
+                android:elevation="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:fontFamily="@font/titrbold"
+                android:textSize="25sp"
+                android:background="@drawable/shape_inter1"
+                android:stateListAnimator="@anim/anim_for_buttons_zoom_in"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btn_sing_up"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                />
+
+
+
+
+
+</RelativeLayout>

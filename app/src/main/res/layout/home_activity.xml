@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homepage"
+    >
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/indigo700">
+
+        <TextView
+            android:id="@+id/user_adress"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toStartOf="@+id/btn_image_humberger_icon"
+            android:elevation="12dp"
+            android:fontFamily="@font/royab"
+            android:gravity="center_vertical"
+            android:paddingRight="8dp"
+            android:text="@string/user_adress"
+            android:textColor="@android:color/white" />
+
+
+        <ImageButton
+            android:id="@+id/btn_image_humberger_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/indigo700"
+            app:srcCompat="@drawable/ic_view_hamburger_main_toolbar" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/image_logo_main"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/rl_toolbar_main"
+        android:layout_marginTop="5dp"
+        tool:background="@tools:sample/backgrounds/scenic" />
+
+    <SearchView
+        android:id="@+id/serach_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_logo_main"
+        android:layout_marginTop="5dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_view_bottom_main"
+        android:layout_below="@+id/serach_view_main"
+        android:background="#FFFFFF"
+
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view_bottom_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="12dp"
+        android:layoutDirection="rtl"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu"
+
+        />
+
+
+</RelativeLayout>
